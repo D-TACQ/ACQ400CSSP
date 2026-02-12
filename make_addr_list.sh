@@ -32,9 +32,13 @@ ips=$(fetch_hosts $1 \
     | sed 's/ $//' )
 
 cat - >workspace.prefs <<EOF
-org.phoebus.pv/default=ca
-org.phoebus.pv.ca/addr_list=$ips
-org.phoebus.pv.ca/auto_addr_list=true
+#org.phoebus.pv/default=ca
+#org.phoebus.pv.ca/addr_list=$ips
+#org.phoebus.pv.ca/auto_addr_list=true
+org.phoebus.pv/default=pva
+org.phoebus.pv.pva/epics_pva_auto_addr_list=false
+org.phoebus.pv.pva/epics_pva_addr_list=$ips
+org.phoebus.pv.pva/epics_pva_name_servers=$ips
 EOF
 
 
