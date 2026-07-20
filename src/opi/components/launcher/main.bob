@@ -1899,6 +1899,35 @@
           </widget>
         </widget>
       </widget>
+      <widget type="group" version="3.0.0">
+        <name>Screenshot Group</name>
+        <y>430</y>
+        <width>30</width>
+        <height>30</height>
+        <style>3</style>
+        <transparent>true</transparent>
+        <widget type="picture" version="2.0.0">
+          <name>Screenshot Icon</name>
+          <file>../../../images/screenshot.png</file>
+          <width>30</width>
+          <height>30</height>
+        </widget>
+        <widget type="action_button" version="3.0.0">
+          <name>Screenshot Button</name>
+          <actions>
+            <action type="execute">
+              <description>Execute Script</description>
+              <script file="../../../scripts/screenshot_all_opis.py">
+              </script>
+            </action>
+          </actions>
+          <text></text>
+          <width>30</width>
+          <transparent>true</transparent>
+          <tooltip>Screenshot all OPIs</tooltip>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+        </widget>
+      </widget>
     </widget>
   </widget>
 </display>
