@@ -151,8 +151,8 @@
       </action>
     </actions>
     <text>FMT SIM</text>
-    <x>340</x>
-    <y>120</y>
+    <x>400</x>
+    <y>121</y>
     <width>150</width>
     <font>
       <font family="Ubuntu" style="BOLD" size="14.0">
@@ -172,8 +172,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_1</name>
     <text>Simulation</text>
-    <x>340</x>
-    <y>100</y>
+    <x>400</x>
+    <y>101</y>
     <width>90</width>
   </widget>
   <widget type="label" version="2.0.0">
@@ -261,7 +261,7 @@
     <pv_name>${UUT}:SOE:STRATEGY</pv_name>
     <x>190</x>
     <y>120</y>
-    <width>130</width>
+    <width>190</width>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_7</name>
@@ -283,8 +283,8 @@
     <name>Label_8</name>
     <text>XRM Device
 (Instrumentation)</text>
-    <x>510</x>
-    <y>80</y>
+    <x>570</x>
+    <y>81</y>
     <width>150</width>
     <height>40</height>
   </widget>
@@ -301,8 +301,8 @@
       </action>
     </actions>
     <text>INST1</text>
-    <x>510</x>
-    <y>120</y>
+    <x>570</x>
+    <y>121</y>
     <width>150</width>
     <font>
       <font family="Ubuntu" style="BOLD" size="14.0">
@@ -323,8 +323,8 @@
       </action>
     </actions>
     <text>INST2</text>
-    <x>510</x>
-    <y>160</y>
+    <x>570</x>
+    <y>161</y>
     <width>150</width>
     <font>
       <font family="Ubuntu" style="BOLD" size="14.0">
@@ -401,5 +401,35 @@
       </font>
     </font>
     <tooltip>Analog Trigger Thresholds</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>SOE FMT BUF_POS</text>
+    <x>20</x>
+    <y>410</y>
+    <width>180</width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_7</name>
+    <pv_name>${UUT}:SOE:FMT:BUF_POS</pv_name>
+    <x>200</x>
+    <y>410</y>
+    <width>150</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>SOE FMT NEXT_RETRY</text>
+    <x>20</x>
+    <y>430</y>
+    <width>180</width>
+    <height>30</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_8</name>
+    <pv_name>${UUT}:SOE:FMT:NEXT_RETRY</pv_name>
+    <x>200</x>
+    <y>430</y>
+    <width>150</width>
+    <height>30</height>
   </widget>
 </display>
