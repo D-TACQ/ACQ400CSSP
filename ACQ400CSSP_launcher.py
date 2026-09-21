@@ -11,6 +11,10 @@ from subprocess import run, Popen, DEVNULL
 """Starts ACQ400CSSP"""
 logging.basicConfig(level=logging.INFO)
 
+def npath(path):
+    """Normalise and quote path"""
+    return f'"{os.path.normpath(path)}"'
+
 def init_globals(args):
     if not args.uuts:
         print("[ACQ400CSSP]")
@@ -41,7 +45,7 @@ def init_globals(args):
     PREFS=          f"{ROOT_DIR}/workspace.prefs"
     UUT_PREFS=      f"{ROOT_DIR}/{ID}_workspace.prefs"
 
-    JAVA_ARGS=      f"-Dphoebus.user={WORKSPACE} -Dphoebus.folder.name.preference= "
+    JAVA_ARGS=      f"-Dphoebus.user={npath(WORKSPACE)} -Dphoebus.folder.name.preference= "
     TARGET=         ""
 
     if args.debug: logging.getLogger().setLevel(logging.DEBUG)
@@ -55,7 +59,7 @@ def run_main(args):
     init_memento(args)
     update_pref()
     
-    CMD = os.path.normpath(f'"{JAVA_BIN}" {JAVA_ARGS} -jar {PHOEBUS_JAR} -settings {SETTINGS} -logging {LOGGING} {TARGET}')
+    CMD = f'{npath(JAVA_BIN)} {JAVA_ARGS} -jar {npath(PHOEBUS_JAR)} -settings {npath(SETTINGS)} -logging {npath(LOGGING)} {TARGET}'
 
     if args.debug:
         print("CMD", CMD)
@@ -152,8 +156,8 @@ def gen_ID(args):
 def init_memento(args):
     global MEMENTO, WORKSPACE, JAVA_ARGS, TARGET, SETTINGS, ID
     if os.path.exists(MEMENTO):
-        TARGET = f"-layout {MEMENTO}"
-        print(f"Using existing workspace {WORKSPACE} TARGET {TARGET}")
+        TARGET = f"-layout {npath(MEMENTO)}"
+        print(f"Using existing workspace {npath(WORKSPACE)}")
         return
 
     new_lines = []
@@ -182,8 +186,8 @@ def init_memento(args):
 
     resource = LAUNCHER
     if len(args.uuts) > 1: resource = LAUNCHER_MULTI
-    TARGET=f"-resource {resource} -layout null"
-    print(f'init_memento() workspace {WORKSPACE} TARGET {TARGET}')
+    TARGET=f"-resource {npath(resource)} -layout null"
+    print(f'init_memento() workspace {npath(WORKSPACE)} TARGET {TARGET}')
     
 def gen_macros_pref(uuts, debug, user_macros):
     macros="<UUT>{uut}</UUT>".format(uut=uuts[0])
