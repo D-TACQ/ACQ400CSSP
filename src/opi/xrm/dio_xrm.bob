@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DIO_32$(MUUT):$(SITE)</name>
+  <width>781</width>
+  <height>478</height>
+  <widget type="label" version="2.0.0">
+    <name>Label_23</name>
+    <text>MODE</text>
+    <x>10</x>
+    <y>90</y>
+    <width>50</width>
+    <height>30</height>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>${UUT}:${SITE}:DIO:MODE</pv_name>
+    <x>60</x>
+    <y>90</y>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>TITLE</name>
+    <text>$(UUT):$(SITE) DIO 32 IMMEDIATE BITS</text>
+    <x>10</x>
+    <y>20</y>
+    <width>610</width>
+    <height>30</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>360</x>
+    <y>130</y>
+    <width>328</width>
+    <height>41</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <bit>7</bit>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <bit>6</bit>
+      <x>41</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_2</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <bit>5</bit>
+      <x>82</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_3</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <bit>4</bit>
+      <x>123</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <bit>3</bit>
+      <x>164</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_5</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <bit>2</bit>
+      <x>205</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_6</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <bit>1</bit>
+      <x>246</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_7</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK1</pv_name>
+      <x>287</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>360</x>
+    <y>171</y>
+    <width>328</width>
+    <height>41</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_8</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <bit>7</bit>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_9</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <bit>6</bit>
+      <x>41</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_10</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <bit>5</bit>
+      <x>82</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_11</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <bit>4</bit>
+      <x>123</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_12</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <bit>3</bit>
+      <x>164</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_13</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <bit>2</bit>
+      <x>205</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_14</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <bit>1</bit>
+      <x>246</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_15</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK2</pv_name>
+      <x>287</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>360</x>
+    <y>212</y>
+    <width>328</width>
+    <height>41</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_16</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <bit>7</bit>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_17</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <bit>6</bit>
+      <x>41</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_18</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <bit>5</bit>
+      <x>82</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_19</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <bit>4</bit>
+      <x>123</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_20</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <bit>3</bit>
+      <x>164</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_21</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <bit>2</bit>
+      <x>205</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_22</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <bit>1</bit>
+      <x>246</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_23</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK3</pv_name>
+      <x>287</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>524</x>
+    <y>253</y>
+    <width>164</width>
+    <height>41</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_29</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK4</pv_name>
+      <bit>3</bit>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_30</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK4</pv_name>
+      <bit>2</bit>
+      <x>41</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_31</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK4</pv_name>
+      <bit>1</bit>
+      <x>82</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_35</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK4</pv_name>
+      <x>123</x>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>730</x>
+    <y>90</y>
+    <width>41</width>
+    <height>368</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK1</pv_name>
+      <y>40</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK2</pv_name>
+      <y>81</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK3</pv_name>
+      <y>122</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK4</pv_name>
+      <y>163</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK6</pv_name>
+      <y>245</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_9</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK5</pv_name>
+      <y>204</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_10</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK7</pv_name>
+      <y>286</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_11</name>
+      <pv_name>${UUT}:${SITE}:ISOUTPUT:BANK8</pv_name>
+      <y>327</y>
+      <width>41</width>
+      <height>41</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>BYTE OUT</text>
+      <width>40</width>
+      <height>40</height>
+      <font>
+        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>10</x>
+    <y>130</y>
+    <width>331</width>
+    <height>328</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK1</pv_name>
+      <width>330</width>
+      <height>41</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_1</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK2</pv_name>
+      <y>41</y>
+      <width>330</width>
+      <height>41</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_2</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK3</pv_name>
+      <y>82</y>
+      <width>330</width>
+      <height>41</height>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_3</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK4</pv_name>
+      <x>165</x>
+      <y>123</y>
+      <width>165</width>
+      <height>41</height>
+      <numBits>4</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_4</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK5</pv_name>
+      <x>290</x>
+      <y>164</y>
+      <width>41</width>
+      <height>41</height>
+      <numBits>1</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_5</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK6</pv_name>
+      <x>290</x>
+      <y>205</y>
+      <width>41</width>
+      <height>41</height>
+      <numBits>1</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_6</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK7</pv_name>
+      <x>290</x>
+      <y>246</y>
+      <width>41</width>
+      <height>41</height>
+      <numBits>1</numBits>
+    </widget>
+    <widget type="byte_monitor" version="2.0.0">
+      <name>Byte Monitor_7</name>
+      <pv_name>${UUT}:${SITE}:IMM:DI:BANK8</pv_name>
+      <x>290</x>
+      <y>287</y>
+      <width>41</width>
+      <height>41</height>
+      <numBits>1</numBits>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>647</x>
+    <y>294</y>
+    <width>41</width>
+    <height>164</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_34</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK8</pv_name>
+      <y>123</y>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_33</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK7</pv_name>
+      <y>82</y>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_32</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK6</pv_name>
+      <y>41</y>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_28</name>
+      <pv_name>$(UUT):$(SITE):IMM:DO:BANK5</pv_name>
+      <width>41</width>
+      <height>41</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+  </widget>
+</display>

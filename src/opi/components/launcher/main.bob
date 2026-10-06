@@ -894,6 +894,33 @@
             </font>
             <tooltip>Pulse Generator</tooltip>
           </widget>
+          <widget type="action_button" version="3.0.0">
+            <name>XRM DIO Button</name>
+            <actions>
+              <action type="execute">
+                <description>open opi/xrm/dio_xrm.bob</description>
+                <script file="../../../scripts/handle_action_button.py">
+                </script>
+              </action>
+            </actions>
+            <text>DIO 32</text>
+            <y>80</y>
+            <width>150</width>
+            <visible>false</visible>
+            <font>
+              <font family="Ubuntu" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <rules>
+              <rule name="SHOW_ON_XRM" prop_id="visible" out_exp="false">
+                <exp bool_exp="pvStr0.upper().find(&quot;XRM&quot;) != -1">
+                  <value>true</value>
+                </exp>
+                <pv_name>loc://SITE_MODEL_$(DID)</pv_name>
+              </rule>
+            </rules>
+            <tooltip>XRM Launcher</tooltip>
+          </widget>
         </widget>
       </widget>
       <widget type="group" version="3.0.0">
