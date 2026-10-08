@@ -323,14 +323,11 @@
     <height>25</height>
     <visible>false</visible>
     <rules>
-      <rule name="HIDE_BAD_SITE" prop_id="visible" out_exp="true">
-        <exp bool_exp="int($(SITE)) &gt; 0 and &quot;$(SCOPE_YTYPE)&quot;==&quot;VOLTS&quot;">
-          <expression>true</expression>
+      <rule name="HIDE_BAD_SITE" prop_id="visible" out_exp="false">
+        <exp bool_exp="&quot;$(YAXIS_LABEL)&quot;==&quot;Volts (V)&quot;">
+          <value>true</value>
         </exp>
-        <exp bool_exp="true">
-          <expression>false</expression>
-        </exp>
-        <pv_name>loc://UUT</pv_name>
+        <pv_name>${UUT}:$(SITE):ADC_CAL</pv_name>
       </rule>
     </rules>
     <border_alarm_sensitive>$(SHOW_ALARM=1)</border_alarm_sensitive>
